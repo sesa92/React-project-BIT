@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 import { Header } from './Header/Header.jsx';
 import { BlogList } from "./BlogList/BlogList.jsx";
 import { ClickCounter } from './ClickCounter/ClickCounter.jsx';
+import { Footer } from "./Footer/Footer";
 
 import "./App.css";
 
@@ -50,6 +51,7 @@ class SmartApp extends React.Component {
             <Header {...headerProps} />
             <ClickCounter count={counter} onButtonClick={this.onButtonClick} />
             <BlogList />
+            <Footer />
         </Fragment>
         );
     };
