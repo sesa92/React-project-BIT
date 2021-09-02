@@ -6,6 +6,8 @@ import { ClickCounter } from './ClickCounter/ClickCounter.jsx';
 import { Footer } from "./Footer/Footer";
 import { MilosevDeo } from './MilosevDeo/MilosevDeo.jsx';
 
+import { Marko } from './Marko/Marko.js';
+
 import "./App.css";
 
 // function App() {
@@ -50,6 +52,7 @@ class SmartApp extends React.Component {
         return (
         <Fragment>
             <Header {...headerProps} />
+            <Marko />
             <ClickCounter count={counter} onButtonClick={this.onButtonClick} />
             <BlogList />
             <MilosevDeo />
