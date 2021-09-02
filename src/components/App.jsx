@@ -4,6 +4,7 @@ import { Header } from './Header/Header.jsx';
 import { BlogList } from "./BlogList/BlogList.jsx";
 import { ClickCounter } from './ClickCounter/ClickCounter.jsx';
 import { Footer } from "./Footer/Footer";
+import { MilosevDeo } from './MilosevDeo/MilosevDeo.jsx';
 
 import "./App.css";
 
@@ -28,7 +29,7 @@ class SmartApp extends React.Component {
     }
 
     onUserSwitch() {
-        this.setState({ name: 'Milan'});
+        this.setState({ name: 'Marko'});
     }
 
     onButtonClick = () => this.setState({ counter: this.state.counter + 1 })
@@ -51,6 +52,7 @@ class SmartApp extends React.Component {
             <Header {...headerProps} />
             <ClickCounter count={counter} onButtonClick={this.onButtonClick} />
             <BlogList />
+            <MilosevDeo />
             <Footer />
         </Fragment>
         );
